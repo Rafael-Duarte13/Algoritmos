@@ -1,0 +1,32 @@
+Comandos JavaScript:
+
+alert('Mensagem...'); Mandar um alerta para o site.
+console.log('Mensagem...'); Mandar uma mensagem para o console.
+prompt('Mensagem...'); Fazer uma pergunta ao usuário.
+confirm('Mensagem...'); Fazer uma pergunta ao usuário. Resp: Sim ou Não.
+var NomeDaVariavel; Criar uma variável global.
+let NomeDaVariavel; Criar uma variável.
+
+*OPERADORES ARITMÉTICOS
+(+ = Soma), (- = Subtração), (* = Multiplicação), (/ = Divisão), (% = Resto) e (** = Potência)
+
+*OPERADORES DE ITERAÇÃO
+++	incremento 1 em 1. (x=x+1)
+--	incremento 1 em 1. (x=x-1)
++=	incremento no valor desejado. (x+=5 -> 5 em 5)
+-=	decremento no valor desejado. (x-=3 -> 3 em 3)
+*=	multiplicação no valor desejado. (x*=2 -> 2 em 2) [x=x*2]
+/=	divisão no valor desejado. (x/=3 -> 3 em 3) [x=x/3]
+
+*OPERADORES RELACIONAIS
+>	maior que.
+<	menor que.
+>=	maior ou igual.
+<=	menor ou igual.
+==	igual.
+!=	diferente.
+
+*OPERADORES LÓGICOS
+&&	AND (e)
+||	OR (ou)
+!	NOT (não)
