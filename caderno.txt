@@ -30,3 +30,25 @@ let NomeDaVariavel; Criar uma variável.
 &&	AND (e)
 ||	OR (ou)
 !	NOT (não)
+
+*ESTRUTURAS DE DECISÃO
+. IF/ELSE
+	if (REGRA) {
+		Procedimentos;
+	}
+
+.SWITCH/CASE
+	switch (VARIAVEL) {
+	case valor1:
+		PROCEDIMENTOS;
+		break;
+	case valor2:
+		PROCEDIMENTOS;
+		break;
+	.
+	.
+	.
+}
+
+
+https://wiki.python.org.br/EstruturaSequencial
