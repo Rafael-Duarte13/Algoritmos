@@ -8,7 +8,7 @@ var NomeDaVariavel; Criar uma variável global.
 let NomeDaVariavel; Criar uma variável.
 
 *OPERADORES ARITMÉTICOS
-(+ = Soma), (- = Subtração), (* = Multiplicação), (/ = Divisão), (% = Resto) e (** = Potência)
+(+ -> Soma), (- -> Subtração), (* -> Multiplicação), (/ -> Divisão), (% -> Resto) e (** -> Potência)
 
 *OPERADORES DE ITERAÇÃO
 ++	incremento 1 em 1. (x=x+1)
