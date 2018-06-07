@@ -1,17 +1,35 @@
 <html>
 <script>
-let nota1 = parseFloat(prompt('Digite o resultado da AV1'));
-let nota2 = parseFloat(prompt('Digite o resultado da AV2'));
+let nota1 = prompt('Digite o resultado da AV1');
+if (isNaN(nota1)) {
+	alert('A nota 1 deve ser um número!');
+	exit();
+}
+nota1 = parseFloat(nota1);
+
+let nota2 = prompt('Digite o resultado da AV2');
+if (isNaN(nota2)) {
+	alert('A nota 2 deve ser um número!');
+	exit();
+}
+nota2 = parseFloat(nota2);
+
+if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+	alert('As notas devem estar entre 0 e 10!');
+	exit();
+}
+
 let media = (nota1 + nota2) / 2;
-/*
+
 if (media == 10) {
 	alert('Aprovado com Distinção! Média ' + media.toFixed(1));
 } else if (media >= 7) {
 	alert('Parabéns, você foi aprovado com média ' + media.toFixed(1));
 } else {
-	alert('Reprovado, estude mais no próximo ano!');
+	alert('Reprovado, estude mais no próximo ano! ' + media.toFixed(1));
 }
-*/
+
+/*
 switch (media) {
 	case 10:
 		alert('Aprovado com Distinção! Média ' + media.toFixed(1));
@@ -25,7 +43,8 @@ switch (media) {
 		alert('Parabéns, você foi aprovado com média ' + media.toFixed(1));
 		break;
 	default:
-		alert('Reprovado, estude mais no próximo ano!');
+		alert('Reprovado, estude mais no próximo ano! ' + media.toFixed(1));
 }
+*/
 </script>
 </html>

@@ -1,65 +1,25 @@
 <html>
 <script>
-let letra = prompt('Digite uma letra.');
-/*
-if (letra == 'a') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'e') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'i') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'o') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'u') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'A') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'E') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'I') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'O') {
-	alert('A letra "' + letra + '" é uma vogal!');
-} else if (letra == 'U') {
-	alert('A letra "' + letra + '" é uma vogal!');
+let letra1 = prompt('Digite um letra');
+let letra = letra1.toLowerCase();
+if (letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u') {
+	alert('Você digitou a volga: ' + letra1);
+} else if (!isNaN(letra)) {
+	alert('Isso não é uma letra!');
 } else {
-	alert('A letra "' + letra + '" é uma consoante!');
+	alert('Você digitou a consoante: ' + letra1);
 }
-*/
-
+/*
 switch (letra) {
-	case 'a':
-		alert('A letra "' + letra + '" é uma vogal!');
+	case 'a': case 'e': case 'i': case 'o': case 'u':
+		alert('Você digitou a volga: ' + letra1);
 		break;
-	case 'e':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'i':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'o':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'u':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'A':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'E':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'I':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'O':
-		alert('A letra "' + letra + '" é uma vogal!');
-		break;
-	case 'U':
-		alert('A letra "' + letra + '" é uma vogal!');
+	case 'b': case 'c': case 'd': case 'f': case 'g': case 'h': case 'j': case 'k': case 'l': case 'm': case 'n': case 'p': case 'q': case 'r': case 's': case 't': case 'v': case 'w': case 'x': case 'y': case 'z':
+		alert('Você digitou a consoante: ' + letra1);
 		break;
 	default:
-		alert('A letra "' + letra + '" é uma consoante!');
+		alert('Isso não é um letra!');
 }
+*/
 </script>
 </html>

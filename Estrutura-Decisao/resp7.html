@@ -1,0 +1,40 @@
+<html>
+<script>
+let numero1 = prompt('Digite o 1° número.');
+if (isNaN(numero1)) {
+	alert('Digite apenas números!');
+	exit();
+}
+numero1 = parseFloat(numero1);
+
+let numero2 = prompt('Digite o 2° número.');
+if (isNaN(numero2)) {
+	alert('Digite apenas números!');
+	exit();
+}
+numero2 = parseFloat(numero2);
+
+let numero3 = prompt('Digite o 3° número.');
+if (isNaN(numero3)) {
+	alert('Digite apenas números!');
+	exit();
+}
+numero3 = parseFloat(numero3);
+
+if (numero1 > numero2 && numero1 > numero3) {
+	alert('O número ' + numero1 + ' é maior!');
+} else if (numero2 > numero3 && numero2 > numero1) {
+	alert('O número ' + numero2 + ' é maior!');
+} else if (numero3 > numero2 && numero3 > numero1) {
+	alert('O número ' + numero3 + ' é maior!')
+}
+
+if (numero1 < numero2 && numero1 < numero3) {
+	alert('E o número ' + numero1 + ' é o menor!');
+} else if (numero2 < numero3 && numero2 < numero1) {
+	alert('E o número ' + numero2 + ' é o menor!');
+} else if (numero3 < numero2 && numero3 < numero1) {
+	alert('E o número ' + numero3 + ' é o menor!');
+}
+</script>
+</html>
