@@ -1,0 +1,20 @@
+<html>
+<script type="text/javascript">
+do {
+	var resposta = parseFloat(prompt('Digite a sua nota.'));
+} while (resposta < 0 || resposta > 10) {
+	alert('Aeeee... Sua nota é ' + resposta.toFixed(2) + '!');
+}
+/*
+for (let i = 0; i < 10; i++) {
+	let nota = parseFloat(prompt('Digite a sua nota.'));
+	if (nota < 0 || nota > 10) {
+		alert('Nota inválida! \nDigite um valor entre 0 e 10. \nTentativa ' + (i + 1));
+	} else if (nota > 0 || nota <= 10) {
+		alert('Aeeee... Sua nota é ' + nota.toFixed(2) + '!');
+		exit();
+	}
+}
+*/
+</script>
+</html>

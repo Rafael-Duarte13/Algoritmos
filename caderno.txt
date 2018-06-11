@@ -50,5 +50,22 @@ let NomeDaVariavel; Criar uma variável.
 	.
 }
 
+.ESTRUTURA DE REPETIÇÃO
+.for (Ponto de partida; condição de parada; iteração) {
+	Procedimentos;
+	break;
+}
+
+.while (condição) {
+	procedimentos;
+	break;
+}
+.do {
+	procedimentos;
+	break;
+} while () {
+	procedimentos;
+}
+
 
 https://wiki.python.org.br/EstruturaSequencial

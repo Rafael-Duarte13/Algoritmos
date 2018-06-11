@@ -1,0 +1,55 @@
+<html>
+<script type="text/javascript">
+//Validação do nome:
+let nome = prompt('Nome:');
+for (let i = 0; nome.length <= 3; i++) {
+	alert('O nome deve tem no minimo 4 caracteres!');
+	nome = prompt('Nome:');
+}
+alert(nome);
+
+//Validação da idade:
+let ehIdadeValida = false;
+for (let i = 0; !ehIdadeValida; i++) {
+	var idade = parseInt(prompt('Idade:'));
+	ehIdadeValida = (idade >= 0 && idade <= 150);
+	if (!ehIdadeValida) {
+		alert('A idade deve ser entre 0 e 150.');
+	}
+}
+alert(idade);
+
+//Validação do salário:
+let ehSalarioValido = false;
+for (let i = 0; !ehSalarioValido; i++) {
+	var salario = parseFloat(prompt('Salário:'));
+	ehSalarioValido = (salario > 0);
+	if (!ehSalarioValido) {
+		alert('O salário deve ter um valor maior que zero!');
+	}
+}
+alert(salario);
+
+//Validação do sexo:
+let ehSexoValido = false;
+for (let i = 0; !ehSexoValido; i++) {
+	var sexo = prompt('Sexo').toLowerCase(); //Deixar tudo em minusculo.
+	ehSexoValido = (sexo == 'f' || sexo == 'm');
+	if (!ehSexoValido) {
+		alert('O sexo deve ser apresentado pela letra inicia!\nF-feminino ou M-masculino.');
+	}
+}
+alert(sexo);
+
+//Validação do estado civil:
+let ehCivilValido = false;
+for (let i = 0; !ehCivilValido; i++) {
+	var estado_civil = prompt('Estado Civil:').toLowerCase();
+	ehCivilValido = (estado_civil == 's' || estado_civil == 'c' || estado_civil == 'v' || estado_civil == 'd');
+	if (!ehCivilValido) {
+		alert('O estado civil deve ser apresentado pela letra inicia!\nS-solteiro, C-casado, V-viuvo ou D-divorciado.');
+	}
+}
+alert(estado_civil);
+</script>
+</html>

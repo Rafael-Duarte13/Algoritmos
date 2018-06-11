@@ -1,0 +1,20 @@
+<html>
+<script>
+let salario = parseFloat(prompt('Digite o seu salário.'));
+
+let vinte = (20 / 100) * salario;
+let quinze = (15 / 100) * salario;
+let dez = (10 / 100) * salario;
+let cinco = (5 / 100) * salario;
+
+if (salario <= 280) {
+	alert('Seu salário era de ' + salario.toFixed(2) + 'R$. Terá um reajuste de 20% = ' + vinte.toFixed(2) + 'R$ \nSeu salário agora é de ' + (salario + vinte).toFixed(2) + 'R$');
+} else if (salario > 280 && salario <= 700) {
+	alert('Seu salário era de ' + salario.toFixed(2) + 'R$. Terá um reajuste de 15% = ' + quinze.toFixed(2) + 'R$ \nSeu salário agora é de ' + (salario + quinze).toFixed(2) + 'R$');
+} else if (salario > 700 && salario <= 1500) {
+	alert('Seu salário era de ' + salario.toFixed(2) + 'R$. Terá um reajuste de 10% = ' + dez.toFixed(2) + 'R$ \nSeu salário agora é de ' + (salario + dez).toFixed(2) + 'R$');
+} else {
+	alert('Seu salário era de ' + salario.toFixed(2) + 'R$. Terá um reajuste de 5% = ' + cinco.toFixed(2) + 'R$ \nSeu salário agora é de ' + (salario + cinco).toFixed(2) + 'R$');
+}
+</script>
+</html>

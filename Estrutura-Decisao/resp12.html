@@ -1,0 +1,12 @@
+<html>
+<script>
+let hora = prompt('Quanto você ganha por hora?');
+let horasMes = prompt('Quantas horas você trabalha no mês?');
+
+let bruto = hora * horasMes;
+
+if (bruto <= 900) {
+	alert('Salário Bruto: R$' + bruto.toFixed(2) + '\n(-) IR (0%): R$ 0.00 \n(-) INSS (10%): R$');
+}
+</script>
+</html>
