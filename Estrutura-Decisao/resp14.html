@@ -1,0 +1,37 @@
+<html>
+<script>
+	let nota1 = prompt('Digite sua média na 1ª prova.');
+	if (isNaN(nota1)) {
+		alert('Valor inválido! Digite só números.');
+		exit();
+	} else if (nota1 < 0 || nota1 > 10) {
+		alert('A média deve ser entre as notas 0 e 10.');
+		exit();
+	}
+	nota1 = parseFloat(nota1);
+
+	let nota2 = prompt('Digite sua média na 2ª prova.');
+	if (isNaN(nota2)) {
+		alert('Valor inválido! Digite só números.');
+		exit();
+	} else if (nota2 < 0 || nota2 > 10) {
+		alert('A média deve ser entre as notas 0 e 10.');
+		exit();
+	}
+	nota2 = parseFloat(nota2);
+
+	let mediaTotal = (nota1 + nota2) / 2;
+
+	if (mediaTotal >= 9) {
+		document.write('Sua média é de ' + mediaTotal.toFixed(1) + ' = A');
+	} else if (mediaTotal >= 7.5 && mediaTotal < 9) {
+		document.write('Sua média é de ' + mediaTotal.toFixed(1) + ' = B');
+	} else if (mediaTotal >= 6 && mediaTotal < 7.5) {
+		document.write('Sua média é de ' + mediaTotal.toFixed(1) + ' = C');
+	} else if (mediaTotal >= 4 && mediaTotal < 6) {
+		document.write('Sua média é de ' + mediaTotal.toFixed(1) + ' = D');
+	} else {
+		document.write('Sua média é de ' + mediaTotal.toFixed(1) + ' = E');
+	}
+</script>
+</html>

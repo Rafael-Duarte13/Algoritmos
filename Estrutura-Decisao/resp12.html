@@ -1,12 +1,24 @@
 <html>
 <script>
-let hora = prompt('Quanto você ganha por hora?');
-let horasMes = prompt('Quantas horas você trabalha no mês?');
+	alert('Responda as perguntas!');
+	let qHoras = parseInt(prompt('Quanto você recebe por hora?'));
+	let horasTrabalhadas = parseInt(prompt('Quantidade de horas trabalhadas no mês?'));
 
-let bruto = hora * horasMes;
+	let bruto = qHoras * horasTrabalhadas;
+	
+	let dCinco = (5 / 100) * bruto;
+	let dDez = (10 / 100) * bruto;
+	let dVinte = (20 / 100) * bruto;
+	let fgts = (11 / 100) * bruto;
 
-if (bruto <= 900) {
-	alert('Salário Bruto: R$' + bruto.toFixed(2) + '\n(-) IR (0%): R$ 0.00 \n(-) INSS (10%): R$');
-}
+	if (bruto <= 900) {
+		alert('Salário bruto: ' + bruto.toFixed(2) + 'R$ \n(-) IR (0%): 0,00R$ \n(-) INSS (10%): ' + dDez.toFixed(2) + 'R$ \nFGTS: ' + fgts.toFixed(2) + 'R$ \nTotal de descontos: ' + dDez.toFixed(2) + 'R$ \nSalário liquido: ' + (bruto - dDez).toFixed(2) + 'R$');
+	} else if (bruto > 900 && bruto <= 1500) {
+		alert('Salário bruto: ' + bruto.toFixed(2) + 'R$ \n(-) IR (5%): ' + dCinco.toFixed(2) + 'R$ \n(-) INSS (10%): ' + dDez.toFixed(2) + 'R$ \nFGTS: ' + fgts.toFixed(2) + 'R$ \nTotal de descontos: ' + (dCinco + dDez).toFixed(2) + 'R$ \nSalário liquido: ' + (bruto - dCinco - dDez).toFixed(2) + 'R$');
+	} else if (bruto > 1500 && bruto <= 2500) {
+		alert('Salário bruto: ' + bruto.toFixed(2) + 'R$ \n(-) IR (10%): ' + dDez.toFixed(2) + 'R$ \n(-) INSS (10%): ' + dDez.toFixed(2) + 'R$ \nFGTS: ' + fgts.toFixed(2) + 'R$ \nTotal de descontos: ' + (dDez + dDez).toFixed(2) + 'R$ \nSalário liquido: ' + (bruto - dDez - dDez).toFixed(2) + 'R$');
+	} else if (bruto > 2500) {
+		alert('Salário bruto: ' + bruto.toFixed(2) + 'R$ \n(-) IR (20%): ' + dVinte.toFixed(2) + 'R$ \n(-) INSS (10%): ' + dDez.toFixed(2) + 'R$ \nFGTS: ' + fgts.toFixed(2) + 'R$ \nTotal de descontos: ' + (dVinte + dDez).toFixed(2) + 'R$ \nSalário liquido: ' + (bruto - dVinte - dDez).toFixed(2) + 'R$');
+	}
 </script>
 </html>
