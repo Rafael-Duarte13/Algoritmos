@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let altura = parseFloat(prompt('Digite a sua altura.'));
+
+        let ehGeneroInvalido = false;
+        for (let i = 0; !ehGeneroInvalido; i++) {
+            var genero = prompt('Qual é o seu genero?').toLowerCase();
+            ehGeneroInvalido = (genero == 'masculino' || genero == 'feminino');
+            if (!ehGeneroInvalido) {
+                alert('O genero deve ser representado por masculino ou feminino!');
+            }
+        }
+
+        formM = (72.7 * altura) - 58;
+        formF = (62.1 * altura) - 44.7;
+
+        if (genero == 'masculino') {
+            alert('Seu peso ideal é ' + formM);
+        } else if (genero == 'feminino') {
+            alert('Seu peso ideal é ' + formF);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peso = parseFloat(prompt('Digite o peso do peixe.'));
+        let exesso = peso % 50;
+        let multa = exesso * 4;
+
+        if (peso > 50) {
+            alert('O peixe tem ' + peso + 'KG\nTem ' + exesso + 'KG a mais!\nVocê vai pagar ' + multa + 'R$');
+        }
+    </script>
+</body>
+</html>

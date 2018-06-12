@@ -1,0 +1,12 @@
+<html>
+<script>
+let maior = 0;
+for (let i = 0; i < 5; i++) {
+    let numero = parseFloat(prompt('Digite o '+(i+1)+' número'));
+    if (i == 0 || numero >= maior) {
+        maior = numero;
+    }
+}
+alert(maior);
+</script>
+</html>

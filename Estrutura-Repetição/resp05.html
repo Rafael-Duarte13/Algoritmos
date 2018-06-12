@@ -1,0 +1,16 @@
+<html>
+<script type="text/javascript">
+let populacaoA = parseFloat(prompt('Informe a população A'));
+let taxasDeCrescimentoA = parseFloat(prompt('Agora informe as taxas de crescimento da população A'));
+let populacaoB = parseFloat(prompt('Informe a população B'));
+let taxasDeCrescimentoB = parseFloat(prompt('Agora informe as taxas de crescimento da população B'));
+
+for (let i = 0; populacaoA < populacaoB; i++) {
+	populacaoA = populacaoA + populacaoA * taxasDeCrescimentoA;
+	populacaoB = populacaoB + populacaoB * taxasDeCrescimentoB;
+	qnt_tempo = i;
+}
+
+alert(qnt_tempo);
+</script>
+</html>
