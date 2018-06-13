@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = new Array(4);
+        let soma = 0;
+        for (let i = 0; i < 4; i++) {
+            notas[i] = prompt('Digite a ' + (i+1) + '° nota.');
+            notas[i] = parseFloat(notas[i]);
+            soma += notas[i];
+        }
+        let media = soma / 4;
+        let resultado = 'Notas: ' + notas + '\n';
+        resultado += 'Media: ' + media.toFixed(2);
+
+        alert(resultado);
+    </script>
+</body>
+</html>

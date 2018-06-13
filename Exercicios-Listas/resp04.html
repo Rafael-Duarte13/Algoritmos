@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let caracteres = new Array(10);
+        let consoantes = [];
+
+        let j = 0;
+
+        for (let i = 0; i < caracteres.length; i++) {
+            caracteres[i] = prompt('Digite a letra.');
+            switch (caracteres[i]) {
+                case 'a': case 'e': case 'i': case 'o': case 'u':
+                    break;
+                default:
+                    if (!isNaN(caracteres[i])) {
+                        break;
+                    } else {
+                        consoantes[j] = caracteres[i];
+                        j++;
+                    }
+                }
+            }
+            alert(consoantes.join(", "));
+    </script>
+</body>
+</html>

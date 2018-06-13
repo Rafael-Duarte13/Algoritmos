@@ -1,0 +1,16 @@
+<html>
+    <script>
+        let alunos = new Array(2);
+        for (let i = 0; i < 2; i++) {
+            let nomes = new Array(2);
+            let notas = new Array(3);
+            nomes[0] = prompt('Digite um nome');
+            for (let j = 0; j < 3; j++) {
+                notas[j] = prompt('Digite a nota');
+            }
+            nomes[1] = notas;
+            alunos[i] = nomes;
+        }
+        alert(alunos.join('\n'));
+    </script>
+</html>
