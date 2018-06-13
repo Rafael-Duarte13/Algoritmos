@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let metros = parseFloat(prompt('Digite o tamanho em metros quadrados da área a ser pintada.'));
+        let litros = metros / 3;
+
+        let latas = litros / 18;
+        let valor = latas * 80;
+
+        alert('Você tem que comprar ' + latas.toFixed(0) + ' latas!\nPor: ' + valor.toFixed(2) + 'R$');
+    </script>
+</body>
+</html>

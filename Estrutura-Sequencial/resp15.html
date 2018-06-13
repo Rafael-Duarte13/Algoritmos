@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hora = parseFloat(prompt('Quanto você ganha por hora?'));
+        let qntHoras = parseFloat(prompt('Quantas horas você trabalhou no mês?'));
+
+        let bruto = hora * qntHoras;
+
+        let ir = (11 / 100) * bruto;
+        let inss = (8 / 100) * bruto;
+        let sindicato = (5 / 100) * bruto;
+
+        alert('+ Salário Bruto : ' + bruto.toFixed(2) + 'R$\n- IR : ' + ir.toFixed(2) + 'R$\n- INSS : ' + inss.toFixed(2) + 'R$\n- Sindicato : ' + sindicato.toFixed(2) + 'R$\n= Salário Liquido : ' + (bruto - ir - inss - sindicato).toFixed(2) + 'R$');
+    </script>
+</body>
+</html>
