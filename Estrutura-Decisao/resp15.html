@@ -7,7 +7,25 @@
 </head>
 <body>
     <script>
-        
+        alert('Digite os três lados do triângulo!');
+
+        let ladoA = parseFloat(prompt('Digite o valor do lado A'));
+        let ladoB = parseFloat(prompt('Digite o valor do lado B'));
+        let ladoC = parseFloat(prompt('Digite o valor do lado C'));
+
+        let soma = ladoA + ladoB;
+
+        if (soma > ladoC) {
+            if (ladoA == ladoB && ladoB == ladoC) {
+                alert('Isso é um triângulo equilátero.');
+            } else if (ladoA == ladoB || ladoB == ladoC) {
+                alert('Isso é um triângulo isósceles.');
+            } else {
+                alert('Isso é um triângulo escaleno');
+            }
+        } else {
+            alert('Isso não é um triângulo!');
+        }
     </script>
 </body>
 </html>
