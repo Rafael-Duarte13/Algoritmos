@@ -8,21 +8,24 @@
 <body>
     <script>
         let numeros = new Array(10);
-        let par = [];
-        let impar = [];
+        let pares = [];
+        let impares = [];
 
-        for (let i = 0; i < 10; i++) {
-            numeros[i] = parseInt(prompt('Digite o ' + (i + 1) + '° número inteiro.'));
+        let index_par = 0, index_impar = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            numeros[i] = parseInt(prompt('Número ' + i));
+            let resto = numeros[i] % 2;
+            if (resto == 0) {
+                pares[index_par] = numeros[i];
+                index_par++;
+            } else {
+                impares[index_impar] = numeros[i];
+                index_impar++;
+            }
         }
 
-        for (let i = 1; i < 10; i+=2) {
-            par[i] = numeros[i];
-        }
-
-        for (let i = 0; i < 10; i+=2) {
-            impar[i] = numeros[i];
-        }
-        alert('Números digitados: \n' + numeros + '\nNúmeros par: \n' + par + '\nNúmeros impar: \n' + impar);
+        alert('Números digitados: \n' + numeros.join(', ') + '\nPares: \n' + pares.join(', ') + '\nImpares: \n' + impares.join(', '));
     </script>
 </body>
 </html>

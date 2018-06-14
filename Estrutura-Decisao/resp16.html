@@ -16,14 +16,15 @@
         let b = parseFloat(prompt('Digite o valor de B'));
         let c = parseFloat(prompt('Digite o valor de C'));
 
-        form = (a + x ** 2) + (b + x) + c;
-
+        delta = (b**2) - (4 * a * c);
         if (delta < 0) {
-            alert('Essa equação não possui raizes reais!');
+            alert('Essa equação não possui raizes reais, porque o calculo foi negativo!');
             exit();
+        } else if (delta == 0) {
+            alert('A equação possui apenas uma raiz real! = ' + delta);
+        } else if (delta > 0) {
+            alert(delta);
         }
-
-        alert(form);
     </script>
 </body>
 </html>

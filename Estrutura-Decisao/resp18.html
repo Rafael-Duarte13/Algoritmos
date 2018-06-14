@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+            var dia = parseInt(prompt('Dia:'));
+            if (dia > 31) {
+                alert('Data inválida. O dia não pode ser maior que 31!');
+            }
+        } while (dia > 31) {
+            alert('Data: ' + dia);
+        }
+
+        do {
+            var mes = parseInt(prompt('Mês:'));
+            if (mes > 12) {
+                alert('Data inválida. O mês não pode ser maior que 12!');
+            }
+        } while (mes > 12) {
+            alert('Data: ' + dia + '/' + mes);
+        }
+
+        do {
+            var ano = parseInt(prompt('Ano:'));
+            if (ano > 9999) {
+                alert('Data inválida. Digite um ano menor que 9999!');
+            }
+        } while (ano > 9999) {
+            alert('Data: ' + dia + '/' + mes + '/' + ano);
+        }
+
+        if (mes == 2) {
+            if (dia > 28) {
+                alert('Data inválida. No mês de fevereiro o dia não pode ser maior que 28!');
+                exit();
+            }
+        } else if (mes == 4) {
+            if (dia > 30) {
+                alert('Data inválida. No mês de abril o dia não pode ser maior que 30!');
+                exit();
+            }
+        } else if (mes == 6) {
+            if (dia > 30) {
+                alert('Data inválida. No mês de junho o dia não pode ser maior que 30!');
+                exit();
+            }
+        } else if (mes == 9) {
+            if (dia > 30) {
+                alert('Data inválida. No mês de setembro o dia não pode ser maior que 30!');
+                exit();
+            }
+        } else if (mes == 11) {
+            if (dia > 30) {
+                alert('Data inválida. No mês de novembro o dia não pode ser maior que 30!');
+                exit();
+            }
+        }
+
+        alert('Ok, data válida.');
+    </script>
+</body>
+</html>
