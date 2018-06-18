@@ -7,12 +7,17 @@
 </head>
 <body>
     <script>
-        do {
-            var numero = parseInt(prompt('Digite um valor menor que 1000.'));
-            if (numero > 1000) {
-                alert('O número deve ser menor que 1000!');
-            }
-        } while (numero > 1000) {}
+        let numero = parseInt(prompt('Digite um número menor que 1000'));
+        if (numero > 1000) {
+            alert('O número não pode ser maior que 1000');
+            exit();
+        }
+
+        if (numero < 10) {
+            alert(numero + ' = ' + numero + ' unidades.');
+        } else if (numero >= 10 && numero < 100) {
+            alert(numero);
+        }
     </script>
 </body>
 </html>

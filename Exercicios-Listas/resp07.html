@@ -1,0 +1,13 @@
+<html>
+<script>
+let numeros = new Array(5);
+let soma = 0;
+let mult = 0;
+for (let i = 0; i < 5; i++) {
+    numeros[i] = parseInt(prompt('Digite o ' + (i + 1) + '° número inteiro.'))
+    soma = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4];
+    mult = numeros[0] * numeros[1] * numeros[2] * numeros[3] * numeros[4];
+}
+alert('Números digitados: ' + numeros.join(", ") + '\nSoma dos números: ' + soma + '\nMultiplicação dos números: ' + mult);
+</script>
+</html>

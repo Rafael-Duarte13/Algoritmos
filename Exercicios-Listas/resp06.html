@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let medias = new Array(3);
+
+        for (let i = 0; i < 3; i++) {
+            let nome = prompt('Digite o nome do ' + (i+1) + '° aluno.');
+
+            let total = 0;
+
+            for (let j = 0; j < 4; j++) {
+                let nota = parseFloat(prompt('Digite a ' + (i+1) + '° nota de ' + nome + '.'));
+
+                total += nota;
+            }
+
+            medias[i] = total / 4;
+
+        }
+
+        let acima = 0;
+        for (let i = 0; i < 3; i++) {
+            if (medias[i] >= 7) {
+                acima++;
+            }
+        }
+
+        alert(acima);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = new Array(3);
+        for (let i = 0; i < 1; i++) {
+            let nome = prompt('Digite o seu nome.');
+            for (let i = 0; i < 3; i++) {
+                notas[i] = parseFloat(prompt('Digite a ' + (i + 1) + '° nota.'));
+            }
+        }
+
+        let soma = notas[0] + notas[1] + notas[2];
+        let media = soma / 3;
+
+        if (media == 10) {
+            alert('Aprovado com distinção. Média = ' + media.toFixed(1));
+        } else if (media >= 7) {
+            alert('Aprovado. Média = ' + media.toFixed(1));
+        } else {
+            alert('Reprovado. Média = ' + media.toFixed(1));
+        }
+    </script>
+</body>
+</html>

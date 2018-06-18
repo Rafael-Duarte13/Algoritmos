@@ -1,0 +1,15 @@
+<html>
+<script>
+let idade = new Array(3);
+let altura = new Array(3);
+
+for (let i = 0; i < 3; i++) {
+    idade[i] = parseInt(prompt('Digite a idade da ' + (i+1) + '° pessoa.'));
+    for (let j = 0; j < 3; j++) {
+        altura[j] = parseFloat(prompt('Agora digite a altura da ' + (i+1) + '° pessoa.'));
+    }
+}
+
+alert(idade + altura);
+</script>
+</html>
