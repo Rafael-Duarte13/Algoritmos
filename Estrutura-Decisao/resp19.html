@@ -13,10 +13,18 @@
             exit();
         }
 
-        if (numero < 10) {
-            alert(numero + ' = ' + numero + ' unidades.');
+        let unidades = numero % 10;
+        let contaLouca = (numero - unidades) / 10;
+        let dezenas = contaLouca % 10;
+        let outraContaLouca = (contaLouca - dezenas) / 10;
+        let centenas = outraContaLouca;
+
+        if (numero > 0 && numero < 10) {
+            alert(numero + ': ' + unidades.toFixed(0) + ' unidades.');
         } else if (numero >= 10 && numero < 100) {
-            alert(numero);
+            alert(numero + ': ' + dezenas.toFixed(0) + ' dezenas e ' + unidades.toFixed(0) + ' unidades.');
+        } else {
+            alert(numero + ': ' + centenas.toFixed(0) + ' centenas, ' + dezenas.toFixed(0) + ' dezenas e ' + unidades.toFixed(0) + ' unidades.');
         }
     </script>
 </body>
