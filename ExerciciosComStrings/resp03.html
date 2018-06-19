@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite o seu nome.").toUpperCase();
+        let nomeHorizontal = nome.slice("");
+
+        var text = "";
+        for (let i = 0; i < nomeHorizontal.length; i++) {
+            text += nomeHorizontal[i] + "\n";
+        }
+
+        alert(text);
+    </script>
+</body>
+</html>
