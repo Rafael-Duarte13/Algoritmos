@@ -7,14 +7,12 @@
 </head>
 <body>
     <script>
-        let nome = prompt("Digite o seu nome.").toUpperCase();
-        let nomePiramide = "";
-
-        for (let i = 0; i < nome.length; i++) {
-            nomePiramide += nome.slice(0, i+1) + "\n";
+        let cpf = prompt("Digite o seu CPF.");
+        let digitos = cpf.length;
+        while (digitos != 14) {
+            alert("CPF inválido! Formato correto:\nxxx.xxx.xxx-xx");
         }
-
-        alert(nomePiramide);
+        alert("Oky");
     </script>
 </body>
 </html>

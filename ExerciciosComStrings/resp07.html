@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let espacos = 0, vogais = 0;
+        let frase = prompt('Digite uma frase.');
+        for (let i = 0; i < frase.length; i++) {
+            let code = frase.toLowerCase().charCodeAt(i);
+            if (code == 32) {
+                espacos++;
+            } else if (code==97 || code==101 || code==105 || code==111 || code==117) {
+                vogais++;
+            }
+        }
+        alert("Espaços: " + espacos + "\nVogais: " + vogais);
+    </script>
+</body>
+</html>

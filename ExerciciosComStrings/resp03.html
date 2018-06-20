@@ -8,12 +8,14 @@
 <body>
     <script>
         let nome = prompt("Digite o seu nome.").toUpperCase();
-        let nomeHorizontal = nome.slice("");
+        let nomeVertical = nome.slice("");
 
         var text = "";
-        for (let i = 0; i < nomeHorizontal.length; i++) {
-            text += nomeHorizontal[i] + "\n";
+        for (let i = 0; i < nomeVertical.length; i++) {
+            text += nomeVertical[i] + "\n";
         }
+
+        //nomeVertical = nome.slice("").join("\n");
 
         alert(text);
     </script>
