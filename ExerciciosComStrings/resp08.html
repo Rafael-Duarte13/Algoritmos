@@ -7,8 +7,8 @@
 </head>
 <body>
     <script>
-        let text = prompt("Digite um palíndromo.").toLowerCase();
-        let textInvertido = text.split("").reverse().join("").trim();
+        let text = prompt("Digite um palíndromo.").toLowerCase().replace(/ /g, "");
+        let textInvertido = text.split("").reverse().join("");
 
         if (text == textInvertido) {
             alert('"' + textInvertido + '" é um políndromo.');

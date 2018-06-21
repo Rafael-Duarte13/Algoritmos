@@ -7,12 +7,20 @@
 </head>
 <body>
     <script>
-        let cpf = prompt("Digite o seu CPF.");
-        let digitos = cpf.length;
-        while (digitos != 14) {
-            alert("CPF inválido! Formato correto:\nxxx.xxx.xxx-xx");
+        do {
+            var cpf = prompt("Digite o número do seu CPF.");
+            var checkDigitos = cpf.length;
+            if (checkDigitos != 14) {
+                alert("CPF inválido!");
+            }
+        } while (checkDigitos != 14) {}
+        
+        while (cpf[3] != "." || cpf[7] != "." || cpf[11] != "-") {
+            alert("O campo deve ser preenchido dessa forma:\nxxx.xxx.xxx-xx");
+            exit();
         }
-        alert("Oky");
+
+        alert("CPF válido...");
     </script>
 </body>
 </html>
