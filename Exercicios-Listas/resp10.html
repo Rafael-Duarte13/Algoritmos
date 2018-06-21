@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetorA = new Array(10);
+        let vetorB = new Array(10);
+
+        let vetorG = new Array(20);
+
+        let index_A = 0, index_B = 0;
+
+        for (let i = 0; i < vetorA.length; i++) {
+            vetorA[i] = parseInt(prompt("Digite o " + (i+1) + "° número do vetor A."));
+        }
+        for (let i = 0; i < vetorB.length; i++) {
+            vetorB[i] = parseInt(prompt("Digite o " + (i+1) + "° número do vetor B."));
+        }
+        
+        for (let i = 0; i < 20; i++) {
+            if (i % 2 == 0) {
+                vetorG[i] = vetorA[index_A];
+                index_A++;
+            } else if (i % 2 == 1) {
+                vetorG[i] = vetorB[index_B];
+                index_B++;
+            }
+        }
+
+        alert(vetorA + '\n' + vetorB + '\n' + vetorG);
+    </script>
+</body>
+</html>

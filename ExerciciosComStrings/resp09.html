@@ -1,26 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        do {
-            var cpf = prompt("Digite o número do seu CPF.");
-            var checkDigitos = cpf.length;
-            if (checkDigitos != 14) {
-                alert("CPF inválido!");
-            }
-        } while (checkDigitos != 14) {}
-        
-        while (cpf[3] != "." || cpf[7] != "." || cpf[11] != "-") {
-            alert("O campo deve ser preenchido dessa forma:\nxxx.xxx.xxx-xx");
-            exit();
-        }
+<html>
+<script>
 
-        alert("CPF válido...");
-    </script>
-</body>
+let cpf = "123a123.123-12";
+let regex = /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/;
+ehValido = cpf.search(regex) == -1 ? "Não" : "Sim";
+alert(ehValido); 
+
+/*
+let ehValido = true;
+let cpf = '1233123.123-12';
+let chars = cpf.charAt(3)=='.' && cpf.charAt(7)=='.' && cpf.charAt(11)=='-';
+if (cpf.length!=14) {
+    ehValido = false;
+} else if (!chars) {
+    ehValido = false;
+} else {
+    for (let i = 0; i < 14; i++) {
+        let letra = cpf.charAt(i);
+        if (i==3 || i==7 || i==11) {
+            continue;
+        } else if (isNaN(letra)) {
+            ehValido = false;
+            break;
+        }
+    }
+}
+
+if (ehValido) {
+    alert('CPF é Válido');
+} else {
+    alert('CPF é Inválido');
+}
+*/
+</script>
 </html>

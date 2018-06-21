@@ -69,3 +69,4 @@ let NomeDaVariavel; Criar uma variável.
 
 
 https://wiki.python.org.br/EstruturaSequencial
+https://www.w3schools.com/js/js_regexp.asp

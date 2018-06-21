@@ -7,51 +7,18 @@
 </head>
 <body>
     <script>
-        alert("Digite a sua data de nascimento.");
-        let dia = prompt("Dia:");
-        let mes = prompt("Mes:");
-        let ano = prompt("Ano:");
+        let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
-        if (mes == 1) {
-            alert("Data de nascimento: " + dia + " de Janeiro de " + ano + ".");
-            exit();
-        } else if (mes == 2) {
-            alert("Data de nascimento: " + dia + " de Fevereiro de " + ano + ".");
-            exit();
-        } else if (mes == 3) {
-            alert("Data de nascimento: " + dia + " de Março de " + ano + ".");
-            exit();
-        } else if (mes == 4) {
-            alert("Data de nascimento: " + dia + " de Abril de " + ano + ".");
-            exit();
-        } else if (mes == 5) {
-            alert("Data de nascimento: " + dia + " de Maio de " + ano + ".");
-            exit();
-        } else if (mes == 6) {
-            alert("Data de nascimento: " + dia + " de Junho de " + ano + ".");
-            exit();
-        } else if (mes == 7) {
-            alert("Data de nascimento: " + dia + " de Julho de " + ano + ".");
-            exit();
-        } else if (mes == 8) {
-            alert("Data de nascimento: " + dia + " de Agosto de " + ano + ".");
-            exit();
-        } else if (mes == 9) {
-            alert("Data de nascimento: " + dia + " de Setembro de " + ano + ".");
-            exit();
-        } else if (mes == 10) {
-            alert("Data de nascimento: " + dia + " de Outubro de " + ano + ".");
-            exit();
-        } else if (mes == 11) {
-            alert("Data de nascimento: " + dia + " de Novembro de " + ano + ".");
-            exit();
-        } else if (mes == 12) {
-            alert("Data de nascimento: " + dia + " de Dezembro de " + ano + ".");
-            exit();
-        } else {
-            alert("Data inválida.");
-            exit();
-        }
+        let data = prompt("Digite a data.\ndd/mm/aaaa");
+        let data2 = data.split("/");
+
+        let dia = parseInt(data2[0]);
+        let mes = parseInt(data2[1]);
+        let ano = parseInt(data2[2]);
+
+        let data_extenso = dia + " de " + meses[mes-1] + " de " + ano;
+
+        alert(data_extenso);
     </script>
 </body>
 </html>
