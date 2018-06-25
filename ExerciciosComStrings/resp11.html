@@ -1,0 +1,31 @@
+<html>
+<script>
+let palavras = ["abacaxi", "uva", "maca", "salmao", "carrossel"];
+let index = Math.floor(Math.random() * palavras.length);
+
+let resultado = [];
+for (let i = 0; i < palavras[index].length; i++) {
+    resultado[i] = '_';
+}
+
+let tentativas = 0;
+let erros = 0;
+while (resultado.join('').search('_') != -1 && erros < 6 && tentativas < palavras[index].length * 2) {
+    alert(resultado.join(''));
+    let achei = false;
+    let letra = prompt("Digite a letra").toLowerCase().charAt(0);
+    for (let i = 0; i < palavras[index].length; i++) {
+        if (letra == palavras[index].charAt(i)) {
+            resultado[i] = letra;
+            achei = true;
+        }
+    }
+    if (!achei) {
+        erros++;
+        alert("Tentativas " + erros);
+    }
+    tentativas++;
+}
+alert(palavras[index]);
+</script>
+</html>

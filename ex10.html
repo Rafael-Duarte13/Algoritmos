@@ -1,0 +1,19 @@
+<html>
+<script>
+let data = new Date();
+
+let diasSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+let diaSemana = diasSemana[data.getDay()];
+
+let diaMes = data.getDate();
+
+let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+let mesExtenso = meses[data.getMonth()];
+
+let ano = data.getFullYear();
+
+let dataExtenso = diaSemana + ", " + diaMes + " de " + mesExtenso + " de " + ano;
+
+alert(dataExtenso);
+</script>
+</html>

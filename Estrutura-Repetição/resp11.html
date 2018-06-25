@@ -1,18 +1,19 @@
 <html>
 <script>
-let lista = '';
+let lista = [];
 let numero1 = parseInt(prompt('Digite o primeiro número inteiro.'));
 let numero2 = parseInt(prompt('Digite o segundo número inteiro.'));
 
 for (let i = numero1; i <= numero2; i++) {
-    lista += i + ', ';
+    lista += i + '|';
 }
 
-let convert = lista.split(', ');
-for (let i = numero1; i <= numero2; i++) {
-    var resultado = convert[i] + convert[i];
+let novaLista = lista.split("|");
+let soma = [];
+for (let i = 0; i < novaLista.length; i++) {
+    soma += parseFloat(novaLista[i]);
 }
 
-alert(resultado);
+alert(soma);
 </script>
 </html>
