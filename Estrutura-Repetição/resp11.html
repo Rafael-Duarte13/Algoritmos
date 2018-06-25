@@ -1,0 +1,18 @@
+<html>
+<script>
+let lista = '';
+let numero1 = parseInt(prompt('Digite o primeiro número inteiro.'));
+let numero2 = parseInt(prompt('Digite o segundo número inteiro.'));
+
+for (let i = numero1; i <= numero2; i++) {
+    lista += i + ', ';
+}
+
+let convert = lista.split(', ');
+for (let i = numero1; i <= numero2; i++) {
+    var resultado = convert[i] + convert[i];
+}
+
+alert(resultado);
+</script>
+</html>
