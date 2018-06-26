@@ -1,0 +1,30 @@
+<html>
+<script>
+let area = prompt("Qual é o tamanho em Metros Quadrados (m²) da área a ser pintada?");
+
+let litros = Math.ceil(area / 6);
+let latas = Math.ceil(litros/18);
+let valorLatas = latas * 80;
+
+let galoes = Math.ceil(litros/3.6);
+let valorgaloes = galoes * 25;
+
+let litrosf = Math.ceil(litros*1);
+let qntLatas = Math.floor(litros/18);
+let resto = litrosf % 18;
+let qntGaloes = Math.ceil(resto/3.6);
+let valorTotal = ((qntLatas*80)+(qntGaloes*25));
+
+alert("Você vai precisar de " + litros + " litros para pintar a área desejada!");
+let respostaCliente = prompt("Escolha um dos meios da compra.\n1- Latas, 2- Galões e 3- Latas e Galões.");
+if (respostaCliente == 1) {
+    alert("Compre " + latas + " latas de tinta. Valor= " + valorLatas.toFixed(2) + "R$");
+} else if (respostaCliente == 2) {
+    alert("Compre " + galoes + " galões de tinta. Valor= " + valorgaloes.toFixed(2) + "R$");
+} else if (respostaCliente == 3) {
+    alert("Compre " + qntLatas + " latas e " + qntGaloes + " galões. Valor= " + valorTotal.toFixed(2) + "R$");
+} else {
+    alert("O valor deve ser entre 1 e 3.");
+}
+</script>
+</html>

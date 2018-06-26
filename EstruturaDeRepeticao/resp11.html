@@ -1,0 +1,18 @@
+<html>
+<script>
+let numerosGerados = [];
+let numero1 = parseInt(prompt("Digite o primeiro número."));
+let numero2 = parseInt(prompt("Digite o segundo número."));
+
+for (let i = numero1; i <= numero2; i++) {
+    numerosGerados += i;
+}
+
+let soma = 0;
+for (let i = 0; i < numerosGerados.length; i++) {
+    soma += parseInt(numerosGerados[i]);
+}
+
+alert("Numeros: " + numerosGerados + "\nSoma dos números gerados = " + soma);
+</script>
+</html>
