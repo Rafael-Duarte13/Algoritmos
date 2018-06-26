@@ -67,6 +67,7 @@ let NomeDaVariavel; Criar uma variável.
 	procedimentos;
 }
 
-
-https://wiki.python.org.br/EstruturaSequencial
-https://www.w3schools.com/js/js_regexp.asp
+.FUNÇÕES
+function nome(parametros) {
+	return;
+}

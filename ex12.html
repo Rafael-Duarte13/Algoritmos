@@ -1,0 +1,30 @@
+<html>
+<script>
+function mensagem1() {
+    alert("Minha mensagem.");
+}
+function mensagem2(texto) {
+    alert(texto);
+}
+function soma(numero1, numero2) {
+    let resultado = numero1 + numero2;
+    return resultado;
+}
+function fatorial(numero) {
+    let resultado = 1;
+    for (let i = numero; i > 0; i--) {
+        resultado *= i;
+    }
+    return resultado;
+}
+function fatorialRecusivo(numero) {
+    return numero == 1 ? 1 : fatorialRecusivo(numero - 1) * numero;
+}
+
+mensagem1();
+mensagem2("Testando função com parametro.");
+alert(soma(8, 8));
+alert(fatorial(4));
+alert(fatorialRecusivo(4));
+</script>
+</html>

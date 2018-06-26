@@ -1,0 +1,19 @@
+<html>
+<script>
+function piramide(numero) {
+    numero = prompt("Digite um número inteiro.");
+
+    resultado = '';
+    for (let i = 1; i <= numero; i++) {
+        for (let j = 1; j <= i; j++) {
+            resultado += j + ' ';
+        }
+        resultado += '\n';
+    }
+    return resultado;
+}
+
+let texto = piramide();
+alert(texto);
+</script>
+</html>

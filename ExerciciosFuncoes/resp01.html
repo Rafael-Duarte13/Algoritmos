@@ -1,0 +1,18 @@
+<html>
+<script>
+function piramide(n) {
+    n = parseInt(prompt("Digite um número inteiro."));
+
+    let resultado = "";
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            resultado += i + ' ';
+        }
+        resultado += '\n';
+    }
+
+    return resultado;
+}
+alert(piramide());
+</script>
+</html>
