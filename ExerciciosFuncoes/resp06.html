@@ -1,16 +1,49 @@
 <html>
 <script>
-function converter(hora, minutos) {
-    let resultado = '';
-    for (let i = 13; i <= 23; i++) {
-        if (i == 13) {
-            alert("1:" + minutos + " P.M.");
-        } else if (i == 14) {
-            alert("2:" + minutos + " P.M.");
-        }
+function conversor(hora) {
+    hora = prompt("Digite a hora.");
+    if (hora.charAt(2) != ":" && hora.charAt(1) != ":") {
+        alert("Você deve informar a hora/minutos nesse formato: XX:XX");
+        exit();
     }
-    return resultado;
+
+    let conversor = hora.split(":");
+    if (conversor[0] > 23) {
+        alert("Hora inválida");
+        exit();
+    } else if (conversor[1] > 59) {
+        alert("Hora inválida");
+        exit();
+    }
+    
+    if (conversor[0] == 13) {
+        alert("1:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 14) {
+        alert("2:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 15) {
+        alert("3:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 16) {
+        alert("4:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 17) {
+        alert("5:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 18) {
+        alert("6:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 19) {
+        alert("7:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 20) {
+        alert("8:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 21) {
+        alert("9:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 22) {
+        alert("10:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 23) {
+        alert("11:" + conversor[1] + " P.M.");
+    } else if (conversor[0] == 00) {
+        alert("12:" + conversor[1] + " P.M.");
+    } else {
+        alert(conversor[0] + ":" + conversor[1] + " A.M.");
+    }
 }
-converter(14, 10);
+conversor();
 </script>
 </html>
