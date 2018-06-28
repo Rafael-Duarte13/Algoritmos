@@ -1,0 +1,32 @@
+<html>
+<script>
+function dataExtenso(data) {
+    let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    
+    data = prompt('Digite uma data.');
+    if (data.charAt(2, 5) != '/') {
+        alert('A data deve ser informada nesse formato: XX/XX/XXXX');
+        exit();
+    }
+    let dataDividida = data.split('/');
+    
+    let dia = parseInt(dataDividida[0]);
+    let mes = parseInt(dataDividida[1]);
+    let ano = parseInt(dataDividida[2]);
+
+    if (dia > 31) {
+        alert(data + ' = NULL');
+        exit();
+    } else if (mes > 12) {
+        alert(data + ' = NULL');
+        exit();
+    } else if (ano > 9999) {
+        alert(data + ' = NULL');
+        exit();
+    } else {
+        return data + ' = ' + dia + ' de ' + meses[mes-1] + ' de ' + ano;
+    }
+}
+alert(dataExtenso());
+</script>
+</html>

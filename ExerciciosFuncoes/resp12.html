@@ -1,0 +1,13 @@
+<html>
+<script>
+let palavra = 'Python';
+let palavraDividida = palavra.split("").join("");
+
+let palavraEmbaralhada = '';
+for (let i = 0; i < palavraDividida.length; i++) {
+    palavraEmbaralhada += palavraDividida[(Math.random() * i).toFixed(0)];
+}
+
+alert(palavraEmbaralhada);
+</script>
+</html>

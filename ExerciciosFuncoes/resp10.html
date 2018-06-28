@@ -1,0 +1,32 @@
+<html>
+<script>
+function jogoCraps() {
+    var resultados = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    var resultadoDosDados = resultados[(Math.random() * 10).toFixed(0)];
+
+    if (resultadoDosDados == 7 || resultadoDosDados == 11) {
+        alert('Valor dos dados = ' + resultadoDosDados + '. Você ganhou.');
+        exit();
+    } else if (resultadoDosDados == 2 || resultadoDosDados == 3 || resultadoDosDados == 12) {
+        alert('Valor dos dados = ' + resultadoDosDados + '. Você perdeu.');
+        exit();
+    }
+
+    alert('Valor dos dados = ' + resultadoDosDados + '. Jogue os dados novamente.');
+
+    if (resultadoDosDados == 4 || resultadoDosDados == 5 || resultadoDosDados == 6 || resultadoDosDados == 8 || resultadoDosDados == 9 || resultadoDosDados == 10) {
+        do {
+            var resultadoNovo = resultados[(Math.random() * 10).toFixed(0)];
+            if (resultadoNovo == 7) {
+                alert('valor dos dados = ' + resultadoNovo + '. Você perdeu.');
+                exit();
+            }
+        } while (resultadoNovo != resultadoDosDados) {
+            alert('Valor dos dados = ' + resultadoNovo + '. Você ganhou.');
+            exit();
+        }
+    }
+}
+jogoCraps();
+</script>
+</html>
