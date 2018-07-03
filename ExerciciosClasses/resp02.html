@@ -1,0 +1,18 @@
+<html>
+<script>
+class quadrado {
+    constructor(lado) {
+        this.setLado(lado);
+    }
+
+    setLado(lado) {
+        this._lado = lado;
+    }
+    getLado() {
+        return 'Lado= ' + this._lado + '. Área do quadrado= ' + (this._lado * this._lado);
+    }
+}
+let q1 = new quadrado();
+console.log(q1);
+</script>
+</html>
