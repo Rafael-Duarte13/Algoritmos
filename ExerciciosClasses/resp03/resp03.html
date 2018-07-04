@@ -1,12 +1,15 @@
 <html>
 <script src="Retangulo.js"></script>
 <script>
-    let retangulo = new Retangulo(5, 10);
+let comprimento = parseFloat(prompt('Informe o comprimento do local'));
+let largura = parseFloat(prompt('Informe a largura do local'));
 
-    retangulo.mudarBase(20);
-    retangulo.mudarAltura(25);
+let largura_piso = parseFloat(prompt('Largura do piso'));
+let comprimento_piso = parseFloat(prompt('Comprimento do piso'));
 
-    console.log(retangulo.obterArea());
-    console.log(retangulo.obterPerimetro());
+let terreno = new Retangulo(comprimento, largura);
+let piso = new Retangulo(largura_piso, comprimento_piso);
+
+alert('Área do terreno: ' + terreno.obterArea() + '\nÁrea do piso: ' + piso.obterArea() + '\nQuantidade de pisos: ' + terreno.obterArea() / piso.obterArea());
 </script>
 </html>

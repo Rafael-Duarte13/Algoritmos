@@ -1,17 +1,36 @@
 class ContaCorrente {
-    constructor(numero, nome, saldo) {
+    constructor(numero, correntista, saldo = 0) {
         this._numero = numero;
-        this._correntista = nome;
-        this.saldo = 0;
+        this._correntista = correntista;
+        this._saldo = saldo;
     }
 
-    alterarNome(nome) {
-        this._correntista = nome;
+    alterarNome(novoCorrentista) {
+        this._correntista = novoCorrentista;
     }
-    deposito(valor) {
-        this.saldo += +valor;
+    depositar(valor) {
+        if (valor > 0) {
+            this._saldo += valor;
+            return true;
+        }
+        return false;
     }
     saque(valor) {
-        this.saldo += -valor;
+        if (valor > 0 && valor <= this._saldo) {
+            this._saldo -= valor;
+            return true;
+        }
+        return false;
+    }
+    transferir(valor, contaDestino) {
+        if (this.saque(valor)) {
+            contaDestino.depositar(valor);
+            return true;
+        }
+        return false;
+    }
+
+    toString() {
+        return 'Conta{ Titular: ' + this._correntista + ', Número da conta: ' + this._numero + ', Saldo: ' + this._saldo.toFixed(2) + 'R$ }';
     }
 }

@@ -1,10 +1,35 @@
 <html>
 <script src="ContaCorrente.js"></script>
 <script>
-let conta = new ContaCorrente('123');
-conta.alterarNome('Fulano');
-conta.deposito(50);
-conta.saque(30);
-console.log(conta);
+//Transferencia
+let rafael = new ContaCorrente('3470', 'José Rafael Duarte Neto', 3000.0);
+let josimar = new ContaCorrente('2010', 'Josimar Barbosa Duarte', 8000.0);
+
+if (rafael.transferir(1000.0, josimar)) {
+    alert('Sucesso');
+} else {
+    alert('Erro');
+}
+
+alert(rafael);
+alert(josimar);
+
+//Deposito
+/*
+let titular = prompt('Informe o titular da conta.');
+let numeroConta = prompt('Infome o número da conta.');
+
+let conta_corrente = new ContaCorrente(numeroConta, titular);
+
+let deposito = parseFloat(prompt('Deposito'));
+
+if (conta_corrente.depositar(deposito)) {
+    alert('Depósito efetuado com sucesso.');
+} else {
+    alert('O valor do depósito não pode ser negativo!');
+}
+
+alert(conta_corrente.toString());
+*/
 </script>
 </html>
