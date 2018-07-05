@@ -71,3 +71,5 @@ let NomeDaVariavel; Criar uma variável.
 function nome(parametros) {
 	return;
 }
+
+Baixar: https://www.apachefriends.org/pt_br/index.html

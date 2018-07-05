@@ -1,10 +1,28 @@
 <html>
 <script src="Tamagushi.js"></script>
 <script>
-let Tamagushi1 = new Tamagushi('Fulano', 50, 80, 11);
+let Tamagushi1 = new Tamagushi('Fulano', 85, 90, 11);
 
-Tamagushi1.mudarNome('Zé');
+Tamagushi1.definirNome('Zé');
 
-console.log(Tamagushi1);
+switch (Tamagushi1.obterHumor()) {
+    case 1:
+        humor = 'Triste';
+        break;
+    case 2:
+        humor = 'Chateado';
+        break;
+    case 3:
+        humor = 'Normal';
+        break;
+    case 4:
+        humor = 'Feliz';
+        break;
+    case 5:
+        humor = 'Super feliz';
+        break;
+}
+
+alert(humor);
 </script>
 </html>
