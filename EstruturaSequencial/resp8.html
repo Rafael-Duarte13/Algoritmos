@@ -1,8 +1,15 @@
-<html>
-<script type="text/javascript">
-	let qtdHoras = parseInt(prompt('Infome a quantidade de horas trabalhadas'));
-	let valorHora = parseFloat(prompt('Informe o valor recebido por hora'));
-	let salarioBruto = qtdHoras * valorHora;
-	alert('Seu sálario bruto será de ' + salarioBruto);
-</script>
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let qntHoras = parseInt(prompt('Informe a quantidade de horas trabalhadas no mês.'));
+		let valorHora = parseFloat(prompt('Informe o valor recebido por hora.'));
+		let salarioBruto = qntHoras * valorHora;
+		alert('Seu sálario bruto é ' + salarioBruto.toFixed(2) + 'R$');
+	</script>
+</body>
 </html>

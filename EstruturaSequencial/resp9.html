@@ -1,7 +1,14 @@
-<html>
-<script type="text/javascript">
-	let farenheit = parseFloat(prompt('Informe a temperatura em Farenheit'));
-	let celsius = (5 * (farenheit - 32) / 9)
-	alert(farenheit.toFixed(2) + '°F = ' + celsius.toFixed(2) + '°C');
-</script>
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let tempFarenheit = parseFloat(prompt('Informe a temperatura em graus FARENHEIT.'));
+		let tempCelsius = 5*(tempFarenheit - 32)/9;
+		alert(tempFarenheit + '°F = ' + tempCelsius + '°C');
+	</script>
+</body>
 </html>
