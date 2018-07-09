@@ -9,10 +9,9 @@
         let tamanho = parseFloat(prompt('Digite o tamanho do arquivo pra download em MB.'));
         let velocidade = parseFloat(prompt('Digite a velocidade do link em Mbps.'));
 
-        let tempo = tamanho / velocidade;
-        let minuto = tempo / 60;
+        let resultado = (tamanho/velocidade) * 60;
 
-        alert("O tempo aproximado do download usando esse link é: " + minuto + " minutos.");
+        alert("O tempo aproximado do download usando esse link é: " + resultado + " minutos.");
     </script>
 </body>
 </html>
